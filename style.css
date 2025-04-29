@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0 , 0 , 0, 0.9), rgba(0 ,0 ,0 , 0.2)), url("bg.jpg");
+  background-size: cover;
+}
+
+.box {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 5px #e5c5c8, -2px -2px 5px #e5c5c8;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  padding: 5px 8px;
+}
+
+.signup-header h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 5px 8px;
+}
+
+.signup-body div {
+  margin-top: 20px;
+  position: relative;
+}
+
+.signup-body div label {
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup-body div input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-block: 4px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+.signup-body div i {
+  position: absolute;
+  top: 44px;
+  right: 15px;
+  color: red;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.signup-body div i.fa-xmark {
+  color: red; /* Error icon color */
+}
+
+.signup-body div i.fa-check {
+  color: green; /* Success icon color */
+}
+
+
+.signup-body div span {
+  font-size: 16px;
+  font-weight: 500;
+  color: red;
+}
+
+.signup-body div input[type="submit"] {
+  border: none;
+  background-color: #e5c5c8;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signup-body div input[type="submit"]:hover{
+  background-color: #c9979b;
+}
+
+.signup-footer p{
+  text-align: center;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.signup-footer p a {
+  text-decoration: none;
+}
+
+.signup-footer p a:hover {
+  text-decoration: underline;
+  color: blue;
+} 
